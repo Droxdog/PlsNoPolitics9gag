@@ -2,12 +2,23 @@
 <html>
 <head>
     <title>Content Blocker</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
     <h1>Content Blocker</h1>
+
     <input type="text" id="word" placeholder="Block this word">
-    <button id="block">Block</button>
-    <ul id="blockedList"></ul>
+    <button id="blockWord">Block Word</button>
+
+    <input type="text" id="selector" placeholder="Block this CSS selector">
+    <button id="blockSelector">Block Selector</button>
+
+    <h2>Blocked Words:</h2>
+    <ul id="blockedListWords"></ul>
+
+    <h2>Blocked Selectors:</h2>
+    <ul id="blockedListSelectors"></ul>
+
     <script src="popup.js"></script>
 </body>
 </html>
